@@ -3,9 +3,12 @@
 @import "./utilitarios/cores.css";
 
 @import "./global/header.css";
-@import "./home/introducao.css";
 
 /* utilidades */
 @import "./utilitarios/componentes.css";
 
 /* home */
+@import "./home/introducao.css";
+
+/* Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
