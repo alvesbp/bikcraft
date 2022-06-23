@@ -3,6 +3,7 @@
 @import "./utilitarios/cores.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* utilidades */
 @import "./utilitarios/componentes.css";
