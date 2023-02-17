@@ -26,3 +26,23 @@ function paramCheck() {
   parametros.forEach(ativarProduto);
 }
 paramCheck();
+
+function ativarPergunta() {
+  const perguntas = document.querySelectorAll(".perguntas button");
+
+  function ativaPergunta(event) {
+    const pergunta = event.currentTarget;
+    const controls = pergunta.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls);
+
+    resposta.classList.toggle("ativo");
+    const ativa = resposta.classList.contains("ativo");
+    pergunta.setAttribute("aria-expanded", ativa);
+  }
+
+  function eventoPerguntas(pergunta) {
+    pergunta.addEventListener("click", ativaPergunta);
+  }
+  perguntas.forEach(eventoPerguntas);
+}
+ativarPergunta();
