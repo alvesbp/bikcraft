@@ -9,6 +9,7 @@
 @import "./utilitarios/componentes.css";
 
 @import "./utilitarios/formulario.css";
+@import "./utilitarios/animacao.css";
 
 /* home */
 @import "./home/introducao.css";

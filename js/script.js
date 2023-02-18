@@ -62,3 +62,8 @@ function imgFoco() {
   });
 }
 imgFoco();
+
+//Animação
+if (window.SimpleAnime) {
+  new window.SimpleAnime();
+}
