@@ -58,10 +58,13 @@
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
+}
+
+.js .perguntas dd {
   display: none;
 }
 
-.perguntas dd.ativo {
+.js .perguntas dd.ativo {
   display: block;
 }
 
