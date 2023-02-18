@@ -20,10 +20,12 @@
 .bicicleta-imagens img {
   flex: 1;
   min-width: 200px;
+  cursor: pointer;
 }
 
 .bicicleta-imagens img:first-child {
   min-width: 100%;
+  cursor: default;
 }
 
 .bicicleta-conteudo > p {
@@ -100,6 +102,12 @@
 
 .bicicleta-ficha span {
   color: var(--cor-6);
+}
+
+@media (max-width: 936px) {
+  .bicicleta-imagens img {
+    cursor: default;
+  }
 }
 
 @media (max-width: 800px) {

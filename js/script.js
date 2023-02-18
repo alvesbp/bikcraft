@@ -46,3 +46,19 @@ function ativarPergunta() {
   perguntas.forEach(eventoPerguntas);
 }
 ativarPergunta();
+
+function imgFoco() {
+  const galeria = document.querySelectorAll(".bicicleta-imagens img");
+  const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+  function trocarImagem() {
+    if (matchMedia("(min-width: 937px)").matches) {
+      galeriaContainer.prepend(this);
+    }
+  }
+
+  galeria.forEach((img) => {
+    img.addEventListener("click", trocarImagem);
+  });
+}
+imgFoco();
